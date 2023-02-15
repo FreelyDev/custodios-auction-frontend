@@ -1,0 +1,107 @@
+.topbar{
+    padding: 20px;
+    .ant-space-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
+.header{
+    width: 100%;
+    max-width: 1190px;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    @media screen and (max-width: 640px) and (orientation: portrait) {
+        height: 50px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .logo{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        img{
+            width: 85px;
+            @media screen and (max-width: 640px) and (orientation: portrait) {
+                width: 70px;
+            }
+        }
+        h1{
+            margin: 0px;
+            color: #fff;
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+            font-size: 42px;
+            @media screen and (max-width: 640px) and (orientation: portrait) {
+                display: none;
+            }
+        }
+    }
+    .wallet-adapter-button{
+        background-color: #c09d2f;
+        transition: all 0.3s ease;
+        height: 45px;
+        color: #161512;
+        &:hover{
+            background-color: #9a7f24;
+        }
+
+    }
+}
+.main-container{
+    
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161512;
+    padding: 20px;
+    @media screen and (max-width: 640px) and (orientation: portrait) {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .footer_content{
+        width: 100%;
+        max-width: 1190px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid #848484;
+        margin-bottom: 20px;
+        
+        h1{
+            width: auto;
+            font-family: 'Tiro Devanagari Sanskrit', serif;
+            font-size: 42px;
+            @media screen and (max-width: 640px) and (orientation: portrait) {
+                font-size: 20px;
+            }
+        }
+        .logo{
+            img{
+                height: 200px;
+                @media screen and (max-width: 640px) and (orientation: portrait) {
+                    height: 100px;
+                }
+            }
+        }
+    }
+    .links{
+        grid-area: auto;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        a{
+            color: #c09d2f;
+            font-size: 40px;
+            @media screen and (max-width: 640px) and (orientation: portrait) {
+               font-size: 20px;
+            }
+        }
+    }
+}

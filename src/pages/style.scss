@@ -1,0 +1,99 @@
+
+.content{
+    max-width: 1190px;
+    margin: auto;
+    padding: 20px;
+    min-height: 70vh;
+    @media screen and (max-width: 640px) and (orientation: portrait) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 0;
+    }
+}
+.ant-drawer-title{
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+.title{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 2px solid #848484;
+    margin-bottom: 20px;
+    h2{
+        font-size: 30px;
+        font-family: 'Tiro Devanagari Sanskrit', serif;
+        @media screen and (max-width: 640px) and (orientation: portrait) {
+            font-size: 26px;
+        }
+    }
+}
+.masonry {
+    display: flex;
+    width: 100%;
+    @media screen and (max-width: 640px) and (orientation: portrait) {
+        width: 100%;
+        flex-direction: column;
+    }
+    .gridColumn {
+        margin: 10px;
+        
+        @media screen and (max-width: 640px) and (orientation: portrait) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: calc(100% - 20px) !important;
+        }
+        .product{
+            width: 100%;
+            margin-bottom: 20px;
+            border: 2px solid ;
+            border-radius: 9px;
+            border-color: #c09d2f55;
+            .state-div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 5px;
+                width: 100%;
+                padding: 5px;
+                .row-div{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 5px;
+                    p{
+                        margin: 0;
+                        span{
+                            color: #c09d2f;
+                        }
+                    }
+                }
+                .hidden{
+                    opacity: 0;
+                    @media screen and (max-width: 640px) and (orientation: portrait) {
+                        display: none;
+                       
+                    }
+                }
+                button{
+                    // background-color: #c09d2f;
+                    width: 100%;
+                    // color: #000;
+                }
+
+            }
+        }
+        .selected{
+            border-color: #c09d2f;
+        }
+    }
+}
